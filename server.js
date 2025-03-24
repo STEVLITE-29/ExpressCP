@@ -14,16 +14,28 @@ app.use(express.static("assets"))
 const workTimeMiddleware = require("./middleware/worktime.js")
 app.use(workTimeMiddleware)
 
+//template engine
+app.set("view engine", "ejs");
+app.set("views", "./views")
+
 // defined the route for the home page
-const homeRouter = require("./routes/home.js")
-app.use("/", homeRouter)
+app.get("/", (req, res) => {
+    res.render("index")
+});
 
 // defined the route for the services page
-const servicesRouter = require("./routes/services.js")
-app.use("/services", servicesRouter)
+app.get("/services", (req, res) => {
+    res.render("services")
+})
 
 // defined the route for the contact page
-const contactRouter = require("./routes/contact.js")
-app.use("/contact", contactRouter)
+app.get("/contact", (req, res) => {
+    res.render("contact")
+});
+
+// 404 page
+app.get("*", (req, res) => {
+    res.render("notFound")
+});
 
 

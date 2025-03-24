@@ -9,8 +9,9 @@
   "author": "Stephen Okeh",
   "license": "ISC",
   "type": "commonjs",
-  "description": "",
+  "description": "checkpoint for express",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.21.2"
   },
   "devDependencies": {
