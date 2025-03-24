@@ -4,28 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/contact.css">
-    <title>Contacts</title>
+    <title>Contact Us | ProBiz Solutions</title>
 </head>
 <body>
     <header>
         <nav>
-          <p id="logo-txt">ProBiz Solutions</p>
-          <ul id="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="#home">Contact Us</a></li>
-          </ul>
+            <p id="logo-txt">ProBiz Solutions</p>
+            <ul id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
-      <main id="home">
+    <main id="home">
         <section id="hero">
-          <div id="about-txt">
-            <h1>Contact Us</h1>
-            <p>Have questions? Reach out to us via email at contact@ProBiz.com or call us at +123 333 2343. We're here to help!</p>
-            <a href="/contact"><button class="CTA-btn">Send An Email</button></a>
-          </div>
-          <img src="/contact.jpg" alt="services image" />
+            <div id="about-txt">
+                <h1>Contact Us</h1>
+                <p>We’d love to hear from you! Whether you have questions, need a consultation, or want to explore partnership opportunities, reach out to us.</p>
+
+                <h3>📍 Our Office:</h3>
+                <p>123 Business St., New York, NY 10001</p>
+
+                <h3>📞 Call Us:</h3>
+                <p>(555) 123-4567</p>
+
+                <h3>📧 Email:</h3>
+                <p>contact@probizsolutions.com</p>
+
+                <h3>🕒 Business Hours:</h3>
+                <p>Monday – Friday: 9:00 AM – 5:00 PM</p>
+                <p><em>(Sorry! We’re closed on weekends.)</em></p>
+
+                <a href="mailto:contact@probizsolutions.com">
+                    <button class="CTA-btn">Send an Email</button>
+                </a>
+            </div>
+            <img src="/contact.jpg" alt="Contact Us Image">
         </section>
+
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

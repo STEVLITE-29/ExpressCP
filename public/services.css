@@ -106,3 +106,106 @@ main {
 .CTA-btn:hover {
     background-color: #03a7ff;
 }
+
+#services {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+#services h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Services Grid Layout */
+#services-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Left Grid - Business Strategy */
+#sgrid-left {
+    flex: 1;
+    background-color: darkmagenta;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+#sgrid-left p {
+    color: black;
+}
+
+/* Right Grid - Marketing & Finance */
+#sgrid-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#sgrid-left, 
+#sgrid-right {
+    min-height: 100%;
+}
+
+#sgrid-right div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#services-grid i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#services-grid h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#services-grid p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #sgrid-left,
+    #sgrid-right {
+        width: 100%;
+    }
+}
